@@ -9,10 +9,12 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 //PAGES
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line } from './pages';
 
+import { useStateContext } from './contexts/ContextProvider';
 import './App.css';
 
 const App = () => {
-  const activeMenu = false;
+  const { activeMenu } = useStateContext();
+
   return (
     <div>
         <BrowserRouter> 
@@ -30,16 +32,16 @@ const App = () => {
                 </div>
 
                 {activeMenu ? (
-                    <div className='w-0 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
+                    <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
                         <Sidebar />
                     </div>
                 ): (
-                    <div className='w-72 dark:bg-secondary-dark-bg'>
+                    <div className='w-0 dark:bg-secondary-dark-bg'>
                         <Sidebar />
                     </div>
                 )}
 
-                <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
+                <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72 ' : 'flex-2'}`}>
                     <div className='bg-main-bg dark:bg-main-dark-bg fixed md:static navbar w-full'>
                         <Navbar />
                     </div>
