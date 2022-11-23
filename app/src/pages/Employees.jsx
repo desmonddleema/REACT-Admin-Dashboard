@@ -9,7 +9,6 @@ const Orders = () => {
     <div className="mt-24 md:m-10 m-2 md:p-10 p-2 rounded-3xl bg-white dark:bg-secondary-dark-bg">
       <Header category="Page" title="Employees" />
       <GridComponent
-        id="gridcomp"
         dataSource={employeesData}
         allowPaging
         allowSorting
