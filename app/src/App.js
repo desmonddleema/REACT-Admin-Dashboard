@@ -53,7 +53,8 @@ const App = () => {
                         { themeSettings && <ThemeSettings /> }
                         <Routes>
                             {/* Dashboard */}
-                            <Route path='/Professional-Admin-Dashboard' element={<Ecommerce />} />
+                            <Route path='/' element={<Ecommerce />} />
+                            <Route path='/Professional-Admin-Dashboard/' element={<Ecommerce />} />
                             <Route path='/Professional-Admin-Dashboard/ecommerce' element={<Ecommerce />} />
 
                             {/* Pages */}
