@@ -9,7 +9,7 @@ import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { activeMenu, setActiveMenu, screenSize, currentColor } = useStateContext();
 
   //close the menu if mobile upon option selection
   const handleCloseSidebar = () => {
@@ -43,9 +43,11 @@ const Sidebar = () => {
                 {item.title}
               </p>
               { item.links.map((link) => (
+                //isActive property can be destructured from callback provided by navLink 
                 <NavLink
                   to={`/${link.name}`}
                   key={link.name}
+                  style={ ({isActive})=>  ({ backgroundColor: isActive? currentColor: '' }) }
                   className={({ isActive })=> isActive ? activeLink : normalLink }
                   onClick = { handleCloseSidebar }
                 >
