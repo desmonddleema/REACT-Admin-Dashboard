@@ -54,29 +54,29 @@ const App = () => {
                         <Routes>
                             {/* Dashboard */}
                             <Route path='/' element={<Ecommerce />} />
-                            <Route path='/Professional-Admin-Dashboard/' element={<Ecommerce />} />
-                            <Route path='/Professional-Admin-Dashboard/ecommerce' element={<Ecommerce />} />
+                            <Route path='Professional-Admin-Dashboard/' element={<Ecommerce />} />
+                            <Route path='Professional-Admin-Dashboard/ecommerce' element={<Ecommerce />} />
 
                             {/* Pages */}
-                            <Route path='/Professional-Admin-Dashboard/orders' element={<Orders />} />
-                            <Route path='/Professional-Admin-Dashboard/employees' element={<Employees />} />
-                            <Route path='/Professional-Admin-Dashboard/customers' element={<Customers />} />
+                            <Route path='Professional-Admin-Dashboard/orders' element={<Orders />} />
+                            <Route path='Professional-Admin-Dashboard/employees' element={<Employees />} />
+                            <Route path='Professional-Admin-Dashboard/customers' element={<Customers />} />
 
                             {/* Apps */}
-                            <Route path='/Professional-Admin-Dashboard/kanban' element={<Kanban />} />
-                            <Route path='/Professional-Admin-Dashboard/editor' element={<Editor />} />
-                            <Route path='/Professional-Admin-Dashboard/calendar' element={<Calendar />} />
-                            <Route path='/Professional-Admin-Dashboard/color-picker' element={<ColorPicker />} />
+                            <Route path='Professional-Admin-Dashboard/kanban' element={<Kanban />} />
+                            <Route path='Professional-Admin-Dashboard/editor' element={<Editor />} />
+                            <Route path='Professional-Admin-Dashboard/calendar' element={<Calendar />} />
+                            <Route path='Professional-Admin-Dashboard/color-picker' element={<ColorPicker />} />
 
                             {/* Apps */}
-                            <Route path='/Professional-Admin-Dashboard/line' element={<Line />} />
-                            <Route path='/Professional-Admin-Dashboard/area' element={<Area />} />
-                            <Route path='/Professional-Admin-Dashboard/bar' element={<Bar />} />
-                            <Route path='/Professional-Admin-Dashboard/pie' element={<Pie />} />
-                            <Route path='/Professional-Admin-Dashboard/financial' element={<Financial />} />
-                            <Route path='/Professional-Admin-Dashboard/color-mapping' element={<ColorMapping />} />
-                            <Route path='/Professional-Admin-Dashboard/pyramid' element={<Pyramid />} />
-                            <Route path='/Professional-Admin-Dashboard/stacked' element={<Stacked />} />
+                            <Route path='Professional-Admin-Dashboard/line' element={<Line />} />
+                            <Route path='Professional-Admin-Dashboard/area' element={<Area />} />
+                            <Route path='Professional-Admin-Dashboard/bar' element={<Bar />} />
+                            <Route path='Professional-Admin-Dashboard/pie' element={<Pie />} />
+                            <Route path='Professional-Admin-Dashboard/financial' element={<Financial />} />
+                            <Route path='Professional-Admin-Dashboard/color-mapping' element={<ColorMapping />} />
+                            <Route path='Professional-Admin-Dashboard/pyramid' element={<Pyramid />} />
+                            <Route path='Professional-Admin-Dashboard/stacked' element={<Stacked />} />
 
                         </Routes>
                     </div>
