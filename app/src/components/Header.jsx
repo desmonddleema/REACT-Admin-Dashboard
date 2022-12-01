@@ -9,4 +9,4 @@ const Header = ({category, title}) => {
   )
 }
 
-export default Header
+export default Header;

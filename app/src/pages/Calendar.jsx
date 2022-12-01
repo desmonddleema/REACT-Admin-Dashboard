@@ -3,9 +3,12 @@ import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, 
 import { scheduleData } from '../data/dummy';
 import { Header } from '../components';
 
+import { useStateContext } from '../contexts/ContextProvider';
+
 const Calender = () => {
+  const { currentMode } = useStateContext();
   return (
-    <div className="m-2 p-2 md:m-10 md:p-10 mt-24 bg-white rounded-3xl">
+    <div className={`m-2 p-2 md:m-10 md:p-10 mt-24 bg-white dark:bg-secondary-dark-bg rounded-3xl ${currentMode==='dark' ? 'dark' : ''}`}>
       <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
